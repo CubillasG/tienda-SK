@@ -1,0 +1,27 @@
+[
+    {
+        "total": 0,
+        "factor": 1
+    },
+    {
+        "total": 1,
+        "factor": 0.90
+    },
+    {
+        "total": 2,
+        "factor": 0.85
+    },
+    {
+      "total": 3,
+      "factor": 0.80  
+    },
+    {
+        "total": 4,
+        "factor": 0.75
+    },
+    {
+        "total": 5,
+        "factor": 0.70
+    }
+
+]

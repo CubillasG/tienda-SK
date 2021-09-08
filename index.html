@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Sk</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script defer src="js/json.js"></script>
+    <script defer src="js/logica.js"></script>
+    <script defer src="js/clases.js"></script>
+    <script defer src="js/productos.json"></script>
+    <script defer src="js/descuento.json"></script>
+
+    
+</head>
+<body>
+  
+   <header id="titulo1">
+     
+        <nav>
+          <div class="menu">
+            <div class="brand">
+              <a href="index.html"><img src="img/logo.jpg" class="logo"/></a>
+            </div>
+            
+
+          </div>
+          <div>
+            <a id="link1">Inicio</a>
+            <a id="link2">Productos</a>
+            <a id="link3">Contactos</a>
+
+
+          </div>
+
+<div class="auth">
+      
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Suscribite</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+       <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SUSCRIBITE, ENTERATE DE LAS NOVEDADES Y OBTENÉ 15% DE DESCUENTO
+         </h5>
+        </div>
+        <div class="modal-body"id="formulario" ></div>
+        
+      </div>
+    </div>
+  </div>
+        
+      
+          
+
+        </div> 
+        </nav>
+       
+    </header>
+<!--CARRUSEL-->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/milton.jpg" class="d-block w-100" alt="Priemra imagen">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>The big Mark Gonzalez</h5>
+                <p>Se lo considera el padre del Skate Street.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/mark.webp" class="d-block w-100" alt="Segunda imagen">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Californian</h5>
+                <p>2011, Transworld Skateboarding le nombra ‘el skater más influyente de la historia’</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/shmoo.jpg" class="d-block w-100" alt="Tercera imagen">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Adidas x Mark Gonzalez</h5>
+                <p>Se cumple 15 años de la primera colaboracion.</p>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+
+<!--PRIMER PARTE-->
+      
+    <section class="splash">
+     <h2 id="titulo2">PRODUCTOS</h2>
+
+     <!---PRODUCTOS-->
+     <div class="container" id="listadoDeProductos">
+       <div>
+          <img src="img/pantalon.jpg" class="foto"/>
+          <p>Pantalon Adidas x Mark G.</p>
+          <p>$ 9.000</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" onclick="">Comprar</button>
+        </div>
+
+        <div>
+          <img src="img/remera.jpg" class="foto"/>
+          <p>Remera Thrasher</p>
+          <p>$ 2.500</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" onclick="">Comprar</button>
+        </div>
+
+        <div>
+          <img src="img/zapatillas.jpg" class="foto"/>
+          <p>zapatillas VANS</p>
+          <p>$ 11.200</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal"onclick>Comprar</button>
+        </div>
+
+        <div>
+          <img src="img/buzo.jpg" class="foto"/>
+          <p>Buzo Independent</p>
+          <p>$ 7.000</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" onclick="">Comprar</button>
+        </div>
+
+        <div>
+          <img src="img/tabla.jpg" class="foto"/>
+          <p>Tabla Santa Cruz</p>
+          <p>$ 15.000</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" onclick="">Comprar</button>
+        </div>
+
+        <div>
+          <img src="img/trucks.jpg" class="foto"/>
+          <p>Remera manga larga</p>
+          <p>$ 4.990</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" onclick="">Comprar</button>
+        </div>
+    </div>
+    
+    <!--Total en el carrito-->
+        <div class="container2">
+              <div class="row align-items-start">
+                 <div class="col">
+                   <span id="cursosEnCarrito">Productos agregados: 0</span>
+                </div>
+          
+              <div class="col">
+                <button type="button" class="btn btn-primary" id="btnVerCarrito">Comprar</button>
+              </div>
+            </div>
+        </div>
+       
+        <!--DETALLE DE LA COMPRA-->
+       <div id="checkOut" class="visually-hidden-focusable">
+           <table class="cajaDetalle">
+             <thead class="primero">
+             <tr>
+               <th class="parte1">Detalle de la compra</th>
+               <th class="parte2">Importe ($)</th>
+             </tr>
+            </thead>
+
+            <tbody id="grillaDetalleCheckOut" class="segundo">
+              <tr>
+                <td class="parte3"></td>
+                <td class="parte4"></td>
+
+              </tr>
+            </tbody>
+           </table>>
+       
+       
+
+       <div class="botones">
+         <div class="boton1">
+        <button type="button" class="btn btn-primary" id="btnVolver">Volver</button>
+         </div>
+
+         <div class="boton2">
+        <button type="button" class="btn btn-success" id="btnComprar">Comprar</button>
+         </div>
+      </div>
+    </div>
+     
+    </section>
+    
+    
+    <footer id="titulo3">
+      <div class="caja">
+        
+        <div class="redes">
+          <h4>Seguinos en las Redes Sociales:</h4><hr>
+            <a href=""><img src="img/instagram.png" width="30px"/></a>
+            <a href=""><img src="img/facebook.png" width="30px"/></a>
+            <a href=""><img src="img/whatsapp.png" width="30px"/></a>
+        </div>
+        
+        <div class="ubicacion">
+          <h4>Encontranos en:</h4><hr>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104812.3042734687!2d-58.53606878670512!3d-34.82142375342756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3e18e4d9a6f%3A0x407e26fe63f27667!2sMonte%20Grande%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1620332139650!5m2!1ses!2sar" width="200" height="80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+    </footer>
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
